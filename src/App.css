@@ -1,0 +1,592 @@
+* {
+   padding: 0;
+   margin: 0;
+   text-decoration: none;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: corbel;
+   font-size: 1.15rem;
+   background-color: var(--light);
+   color: var(--black);
+}
+
+:root {
+   --black: #231f20;
+   --dark: #70706f;
+   --light: #e0e0dd;
+   --white: #ffffff;
+   --black: #231f20;
+}
+
+@font-face {
+   font-family: corbel;
+   src: url(public/font/Corbel.ttf);
+}
+
+@font-face {
+   font-family: corbelBold;
+   src: url(public/font/CorbelBold.ttf);
+}
+
+/*************************************************** TEXT STYLING ***************************************************/
+
+h1 {
+   color: var(--black);
+   font-family: corbelBold;
+   font-size: 5rem;
+   line-height: 2.75rem;
+   padding: 0 0 50px;
+   text-transform: uppercase;
+}
+
+.h1-light {
+   color: var(--light);
+   font-size: 3rem;
+   padding: 0;
+}
+
+h2 {
+   color: var(--black);
+   font-family: corbel;
+   font-size: 2.25rem;
+   padding: 0 0 15px;
+}
+
+h3 {
+   color: var(--black);
+   font-family: corbel;
+   font-size: 1.75rem;
+   padding: 0 0 10px;
+}
+
+h4 {
+   color: var(--black);
+   font-family: corbelBold;
+   font-size: 1.25rem;
+}
+
+h5 {
+   color: var(--black);
+   font-family: corbelBold;
+   font-size: 1.25rem;
+   padding-top: 10px;
+}
+
+.h2-light {
+   color: var(--light);
+   font-size: 2rem;
+   padding: 0;
+}
+
+.h3-light {
+   color: var(--light);
+   font-size: 1.5rem;
+   padding: 0;
+}
+
+a {
+   text-decoration: underline;
+   color: var(--dark);
+   cursor: pointer;
+}
+
+a.active {
+   color: var(--light);
+   font-size: 1.25rem;
+}
+
+a:hover {
+   color: var(--light);
+}
+
+.hidden,
+.mobile-version {
+   display: none;
+}
+
+/*************************************************** SET UP ***************************************************/
+
+.grid-container {
+   display: grid;
+   grid-template-columns: 350px 1fr;
+   height: 100vh;
+}
+
+.right-pane {
+   padding: 200px 20%;
+   overflow-y: auto;
+   display: flex;
+   gap: 200px;
+   flex-direction: column;
+}
+
+#om-mig,
+#kompetencer,
+#projekter {
+   padding: 75px 0 0;
+}
+
+/*************************************************** KONTAKT ***************************************************/
+
+.left-pane {
+   background-color: var(--black);
+   padding: 50px;
+   height: 100vh;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+}
+
+.andrea {
+   object-fit: cover;
+   width: 250px;
+   height: 250px;
+   align-self: center;
+}
+
+.navigation {
+   display: inline-block;
+   list-style: none;
+}
+
+.navigation li {
+   cursor: pointer;
+   list-style-type: none;
+   padding: 2.5px 0;
+}
+
+.h1-light {
+   padding-bottom: 25px;
+}
+
+.kontakt-info {
+   align-self: end;
+}
+
+.kontakt-mobil-version {
+   display: none;
+}
+
+.navigation a.active {
+   color: var(--light);
+}
+
+/*************************************************** OM MIG ***************************************************/
+
+#om-mig p {
+   padding: 0 0 25px;
+   font-size: 1.15rem;
+   line-height: 1.75rem;
+   /* text-align: right; */
+}
+
+/*************************************************** UDDANNELSE ***************************************************/
+
+.uddannelse {
+   padding-bottom: 25px;
+}
+
+.uddannelse-component {
+   padding-top: 40px;
+   text-align: right;
+}
+/*************************************************** PROJEKT ***************************************************/
+.projekt {
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   margin: 0 0 50px;
+   padding: 10px;
+   gap: 50px;
+   align-items: center;
+}
+
+.projekt:hover {
+   background-color: var(--black);
+   color: var(--light);
+   cursor: pointer;
+}
+
+.projekt img {
+   width: 100%;
+   grid-column: 2/3;
+   grid-row: 1/3;
+   padding: 10px 0;
+   align-self: center;
+}
+
+.projekt-titel-style {
+   color: var(--dark);
+   padding: 0;
+}
+
+.projekt-info-boks {
+   width: calc(100vw - 500px);
+   min-width: 250px;
+   max-width: 930px;
+   left: 425px;
+   top: 150px;
+   height: calc(100vh - 300px);
+   position: absolute;
+   background-color: var(--black);
+   padding: 50px;
+   text-align: right;
+}
+
+.projekt-info {
+   height: 90%;
+   display: grid;
+   grid-template-columns: 1.5fr 1fr;
+   justify-content: center;
+   align-items: center;
+   text-align: end;
+   z-index: 5;
+   gap: 25px;
+}
+
+.projekt-info h2,
+.projekt-info h3,
+.projekt-info h4,
+.projekt-info p {
+   color: var(--light);
+}
+
+.projekt-info img {
+   object-fit: cover;
+   height: 75%;
+   width: calc(calc(100vw - 500px) - 400px);
+   max-width: 490px;
+}
+
+.projekt-tekst {
+   height: 75%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.right-align {
+   text-align: right;
+}
+/*************************************************** KONTAKT ***************************************************/
+/*************************************************** KOMPETENCER ***************************************************/
+
+.tekniske-kompetencer img {
+   width: 80px;
+}
+
+.tool {
+   padding: 0 0 50px;
+   display: grid;
+   grid-template-columns: 1.5fr 1fr;
+   gap: 15px;
+}
+
+.sociale-kompetencer, .personlige-kompetencer {
+   padding: 0 15px 50px;
+   list-style: inside;
+   font-size: 1.25rem;
+}
+
+.kompetence-billede {
+   grid-column: 2/3;
+   align-self: center;
+   justify-self: end;
+   display: flex;
+   flex-direction: row;
+   gap: 30px;
+}
+
+.tool-tekst {
+   grid-column: 1/2;
+   grid-row: 1/2;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+#kompetencer {
+   background-color: var(--dark);
+   padding: 50px;
+   color: var(--light);
+   margin: 0 -50px;
+}
+
+#kompetencer p {
+   line-height: 1.5rem;
+}
+
+#kompetencer h1,
+#kompetencer h5, #kompetencer h2, #kompetencer h3 {
+   color: var(--white);
+}
+
+#kompetencer h3 {
+   padding: 0;
+}
+
+.small-version {
+   display: none;
+}
+
+/*************************************************************************************************************/
+/*************************************************** MEDIA ***************************************************/
+/*************************************************************************************************************/
+
+@media (max-width: 1280px) {
+   .projekt-info-boks {
+      top: 50px;
+      height: calc(100vh - 100px);
+   }
+
+   .projekt-info {
+      height: 92%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1.5fr 1fr;
+      padding: 10px 0 0;
+   }
+
+   .projekt-info img {
+      height: 90%;
+      width: calc(calc(100vw - 500px) - 150px);
+      justify-self: center;
+   }
+
+   .projekt-tekst {
+      height: 100%;
+      padding: 0 30px;
+   }
+
+   #kompetencer h1 {
+      font-size: 4rem;
+   }
+
+   .kompetence-billede {
+      gap: 20px;
+   }
+}
+
+@media (max-width: 1200px) {
+   .kompetence-billede {
+      flex-direction: column;
+      gap: 20px;
+   }
+}
+
+@media (max-width: 1080px) {
+   #kompetencer h1 {
+      font-size: 3.25rem;
+   }
+}
+
+/* Mobil */
+@media (max-width: 950px) {
+   body {
+      font-size: 0.9rem;
+   }
+
+   /*************************************************** TEXT STYLING ***************************************************/
+
+   h1 {
+      font-size: 3.25rem;
+      line-height: 1.75rem;
+   }
+
+   .h1-light {
+      font-size: 2.75rem;
+      line-height: 2.5rem;
+   }
+
+   h2 {
+      font-size: 1.75rem;
+   }
+
+   h3 {
+      font-size: 1.25rem;
+   }
+
+   h4,
+   h5 {
+      font-size: 0.9rem;
+   }
+
+   .h2-light {
+      font-size: 1.75rem;
+   }
+
+   .h3-light {
+      font-size: 1.25rem;
+   }
+
+   a.active {
+      font-size: 1rem;
+   }
+
+   /*************************************************** SET UP ***************************************************/
+
+   .grid-container {
+      grid-template-columns: 75px 1fr;
+   }
+
+   .right-pane {
+      padding: 100px 25%;
+      gap: 50px;
+   }
+
+   .mobile-version {
+      display: inline-block;
+   }
+   /*************************************************** KONTAKT ***************************************************/
+
+   .left-pane {
+      padding: 5px;
+      justify-content: start;
+      gap: 10px;
+      padding-top: 101.66px;
+   }
+
+   .andrea {
+      width: 65px;
+      height: auto;
+      transition: 0.5s;
+      align-self: start;
+      position: absolute;
+      top: 5px;
+   }
+
+   .kontakt-mobil-version {
+      display: block;
+      padding-top: calc(100vh - 325px);
+      bottom: 0;
+   }
+
+   .kontakt-info div {
+      padding: 0 0 2.5px 2px;
+   }
+
+   .kontakt-computer-version {
+      display: none;
+   }
+
+   .h1-light {
+      padding: 0;
+   }
+
+   .bigger {
+      width: 250px;
+      z-index: 5;
+   }
+
+   /*************************************************** KONTAKT ***************************************************/
+   /*************************************************** UDDANNELSE ***************************************************/
+
+   .uddannelse {
+      display: block;
+   }
+
+   .uddannelse article {
+      padding: 5px 0;
+   }
+
+   /*************************************************** PROJEKT ***************************************************/
+
+   .projekt {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 0;
+   }
+
+   .projekt-info-boks {
+      width: calc(100vw - 300px);
+      left: 185px;
+      top: 100px;
+      height: calc(100vh - 200px);
+   }
+
+   .projekt-info img {
+      width: calc(calc(100vw - 450px));
+   }
+
+   .projekt-tekst {
+      padding: 0 25px;
+   }
+
+   /*************************************************** KONTAKT ***************************************************/
+   /*************************************************** KOMPETENCER ***************************************************/
+
+   .tool {
+      grid-template-rows: 0.5fr 1fr;
+      grid-template-columns: 1fr;
+   }
+
+   .kompetence-billede {
+      grid-row: 1/2;
+      grid-column: 1/3;
+      justify-self: center;
+   }
+
+   .tool-tekst {
+      grid-row: 2/3;
+      grid-column: 1/3;
+      justify-content: start;
+   }
+
+   .kompetence-billede {
+      flex-direction: row;
+      gap: 30px;
+   }
+
+   .small-version {
+      display: none;
+   }
+}
+
+@media (max-width: 768px) {
+   .right-pane {
+      padding: 75px 15%;
+      gap: 50px;
+   }
+
+   .projekt-info-boks {
+      width: calc(100vw - 150px);
+      left: 115px;
+   }
+
+   .projekt-info img {
+      width: calc(calc(100vw - 300px));
+   }
+}
+
+@media (max-width: 590px) {
+   .small-version {
+      display: inline-block;
+   }
+
+   #kompetencer h1 {
+      line-height: 3rem;
+   }
+}
+
+@media (max-width: 510px) {
+   .right-pane {
+      padding: 50px 5%;
+      gap: 50px;
+   }
+
+   .projekt-info-boks {
+      top: 150px;
+      height: calc(100vh - 300px);
+      padding: 25px;
+   }
+
+   .small-version {
+      display: none;
+   }
+}
+
+@media (max-width: 470px) {
+   .small-version {
+      display: inline-block;
+   }
+}

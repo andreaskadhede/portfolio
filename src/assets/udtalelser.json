@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Jeanette Manbjerg",
+        "relation": "Chef",
+        "testimonial": "Andrea er en utrolig sød, smilende, alsidig og vellidt medarbejder. Hun var altid god til at hjælpe til med ekstravagter og kunne træde til med kort varsel ved sygdom.",
+        "stilling": "Forområdeleder",
+        "virksomhed": "Kvickly Holstebro"
+    },
+    {
+        "name": "Helle Glerup",
+        "relation": "Lærer",
+        "testimonial": "Andrea har været en ualmidelig pligtopfyldende elev, meget opmærksom og flittig.",
+        "stilling": "Matematiklærer",
+        "virksomhed": "Ørnhøj Skole"
+    },
+    {
+        "name": "Lisbeth Liv Spanggaard",
+        "relation": "Lærer",
+        "testimonial": "Andrea er en dejlig pige, sød, hjælpsom og utrolig dygtig. Det er altid dejligt at komme ind i lokalet og høre hende og se hendes glade smil.",
+        "stilling": "Klasselærer",
+        "virksomhed": "Ørnhøj Skole"
+    }
+]
