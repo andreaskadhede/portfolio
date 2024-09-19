@@ -17,17 +17,16 @@ body {
    --dark: #70706f;
    --light: #e0e0dd;
    --white: #ffffff;
-   --black: #231f20;
 }
 
 @font-face {
    font-family: corbel;
-   src: url(public/font/Corbel.ttf);
+   src: url('/font/Corbel.ttf');
 }
 
 @font-face {
    font-family: corbelBold;
-   src: url(public/font/CorbelBold.ttf);
+   src: url('/font/CorbelBold.ttf');
 }
 
 /*************************************************** TEXT STYLING ***************************************************/

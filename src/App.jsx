@@ -39,6 +39,7 @@ export default function App() {
 
    const [scrollTop, setScrollTop] = useState(0);
    const rightPaneRef = useRef(null);
+   console.log(scrollTop)
 
    const handleScroll = () => {
       if (rightPaneRef.current) {
@@ -64,7 +65,7 @@ export default function App() {
             <img
                ref={andreaRef}
                className={`andrea ${isBigger ? "bigger" : ""}`}
-               src="../src/assets/img/andrea.webp"
+               src="/img/andrea.webp"
                alt="Billede af Andrea Skadhede"
                onClick={handleClick} // Use onClick event handler
             />

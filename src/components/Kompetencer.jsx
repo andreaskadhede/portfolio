@@ -28,8 +28,8 @@ export default function Kompetencer() {
          <div className="tekniske-kompetencer">
             <div className="tool">
                <div className="kompetence-billede">
-                  <img src="src/assets/img/html.webp" alt="HTML5 logo" />
-                  <img src="src/assets/img/css.webp" alt="CSS3 logo" />
+                  <img src="/img/html.webp" alt="HTML5 logo" />
+                  <img src="/img/css.webp" alt="CSS3 logo" />
                </div>
 
                <div className="tool-tekst">
@@ -47,7 +47,7 @@ export default function Kompetencer() {
             <div className="tool">
                <img
                   className="kompetence-billede"
-                  src="src/assets/img/javascript.webp"
+                  src="/img/javascript.webp"
                   alt="JavaScript logo"
                />
                <div className="tool-tekst">
@@ -65,7 +65,7 @@ export default function Kompetencer() {
             <div className="tool">
                <img
                   className="kompetence-billede"
-                  src="src/assets/img/react.webp"
+                  src="/img/react.webp"
                   alt="React.js logo"
                />
                <div className="tool-tekst">
@@ -83,7 +83,7 @@ export default function Kompetencer() {
             <div className="tool">
                <img
                   className="kompetence-billede"
-                  src="src/assets/img/wordpress.webp"
+                  src="/img/wordpress.webp"
                   alt="WordPress logo"
                />
                <div className="tool-tekst">

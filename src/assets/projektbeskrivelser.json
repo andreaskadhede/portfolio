@@ -2,7 +2,7 @@
     {
         "name": "Steno",
         "focus": "Interaktiv Storytelling",
-        "img": "./src/assets/img/steno.webp",
+        "img": "/img/steno.webp",
         "description": "Gruppeprojekt i 2. semester med fokus på Interaktiv Stroytelling.",
         "tools": "HTML5, CSS3 og JavaScript",
         "link": "https://steno.andreaskadhede.dk"
@@ -10,7 +10,7 @@
     {
         "name": "Trøjborg Bryghus",
         "focus": "1. semester eksamen",
-        "img": "./src/assets/img/trojborg-bryghus.webp",
+        "img": "/img/trojborg-bryghus.webp",
         "description": "Eksamens projekt på 1. semester, omhandlende et fiktivt mikrobryggeri med fokus på alkoholfri øl.",
         "tools": "HTML5 og CSS3",
         "link": "https://trojborg-bryghus.andreaskadhede.dk"
@@ -18,7 +18,7 @@
     {
         "name": "Nippon",
         "focus": "UX/UI",
-        "img": "./src/assets/img/nippon.webp",
+        "img": "/img/nippon.webp",
         "description": "Gruppeprojekt i 2. semester med fokus på UX/UI.",
         "tools": "HTML5, CSS3 og JavaScript",
         "link": "https://nippon.andreaskadhede.dk"
@@ -26,7 +26,7 @@
     {
         "name": "Broderi Moderne",
         "focus": "2. semester eksamen",
-        "img": "./src/assets/img/broderi-moderne.webp",
+        "img": "/img/broderi-moderne.webp",
         "description": "Gruppeeksamen på 2. semester i samarbejde med virksomheden Broderi Moderne.",
         "tools": "HTML5, CSS3 og JavaScript",
         "link": "https://broderi-moderne-v2.andreaskadhede.dk"
@@ -34,7 +34,7 @@
     {
         "name": "FDF Ørnhøj",
         "focus": "Frivillig webansvarlig",
-        "img": "./src/assets/img/fdf-ornhoj.webp",
+        "img": "/img/fdf-ornhoj.webp",
         "description": "Kredshjemmeside for FDF Ørnhøj.",
         "tools": "WordPress",
         "link": "http://fdf.dk/ornhoj/"
